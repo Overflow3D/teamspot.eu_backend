@@ -1,0 +1,48 @@
+{
+	"admin": [{
+		"name": "room",
+    "description": "Komenda pozwala na utworzenie pokoju dla użytkownika, który chcę otrzymać swój własny kanał, aby komenda została wykonana do końca i przycieliła użytkownikowi channel admina na kanale. Jego obecność na teamspeaku jest wymaga w przeciwnym razie Head Admin tworzący pokoju jest zobligowany doręczyć token do odzyskiwania channel admina osobie tworzonej pokój ręczeni. Wymagane parametry strefa oraz aktualna nazwa użytkownika.",
+		"parameters": ["S1", "TeamSpeakUser"]
+	}, {
+		"name": "kicks",
+    "description": "Komenda pozwala na sprawdzenie kicków użytkownika danego dnia. Wymaga daty w określonym formacie oraz unikalnego ID użytkownika można znaleźć je pod zakładką permissions -> List All Clients w TeamSpeak'u.",
+		"parameters": ["L6bv1FMnkDONcwnf3LMKEpcB5NU=", "16-01-2017"]
+	}, {
+		"name": "kara",
+    "description": "Wysyła renegata do karnego jeżyka na podany okres czasu :)! Tą samą komendą można anulować karę wpisując 0 w miejscu sekund.",
+		"parameters": ["900", "JacekZSosnowca"]
+	}, {
+		"name": "check",
+    "description": "Komenda pozwala na sprawdzenie/usunięcie pokoi, które nie są aktywne od 14dniu. Wykonywana operacja jest determinowa poprzed argument false/true. False sprawdza tylko pokoje nie usuwa ich, jednak zmiana argumentu na true usuwa pokoje. ",
+		"parameters": ["false"]
+	}],
+	"user": [{
+    "name": "help",
+    "description": "Wszystkie dostępne komendy na bocie z poziomu bota w oknie rozmowy lub pokoju Sprawa dla admina.",
+		"parameters": []
+	}, {
+		"name": "doToken",
+    "description": "Pozwala starym użytkownikom, którzy mieli pokój przed wprowadzeniem bota na utworzenie własnego unikalnego tokeny, który pozwoli przywrócić im channel Admina na własny pokoju. Po wpisaniu komendy otrzymasz od SkyNet token na prywatnej wiadomości.",
+		"parameters": []
+	}, {
+		"name": "token",
+    "description": "Komenda pozwala, na przywrócenie użytkownikom, channel admina na włsanych pokojach, token wymagany do przywrócenia channel admin, został nadany podczas tworzenia pokoju, przez Head Admina. Jeśli jesteś starym użytkownikiem, który miał pokoju przed utworzeniem bota zobacz komendę !doToken.",
+		"parameters": ["xA3oIp2a"]
+	}, {
+		"name": "addMe",
+    "description": "Jeśli jesteś Head Adminem i z jakiegoś powodu nie została nadana Ci ranga Admina na bocie wpisz tą komendę, a otrzymasz rangę automatycznie od Bota.",
+		"parameters": []
+	}, {
+		"name": "turnOffPoke",
+    "description": "Komenda umożliwia wyłaczenie poków od wszystkich użytkowników po za administracja TeamSpeaka. Przy pomocy parametrów on, wyłącza poka oraz off, włącza poke ponownie.",
+		"parameters": ["on"]
+	}, {
+		"name": "turnOffText",
+    "description": "Komenda umożliwia wyłaczenie prywatnych wiadomości od wszystkich użytkowników po za administracja TeamSpeaka. Przy pomocy parametrów on, wyłącza prywatną wiadomość oraz off, włącza ją ponownie.",
+		"parameters": ["on"]
+	}, {
+		"name": "accept",
+    "description": "Komenda służąca do zaakceptowania regulaminu napisz ją do bot przy pierwszym odwiedzeniu naszego TeamSpeak'a.",
+		"parameters": []
+	}]
+}

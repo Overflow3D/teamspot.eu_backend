@@ -1,0 +1,37 @@
+body,
+div,
+html {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: gothic;
+  src: url(/static/assets/fonts/gothic_regular.ttf);
+}
+
+body,
+html {
+  font-family: gothic;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url(/static/assets/bc.png) no-repeat 50% fixed;
+  background-size: cover;
+  height: 100%;
+}
+
+sd-app {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  min-height: 100vh;
+}
